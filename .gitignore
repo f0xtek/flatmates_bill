@@ -75,3 +75,5 @@ dmypy.json
 cython_debug/
 .idea/
 .vscode/
+*.pdf
+files/design.txt
