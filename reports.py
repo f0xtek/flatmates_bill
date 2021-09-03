@@ -39,5 +39,6 @@ class PdfReport:
         pdf.cell(w=200, h=25, txt=f"£{flatmate2.pays(bill, flatmate1)}", border=0, ln=1)
 
         # Generate & open the file
+        os.chdir("files")
         pdf.output(self.filename)
         webbrowser.open(f"file://{os.path.realpath(self.filename)}")
